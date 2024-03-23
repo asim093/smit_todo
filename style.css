@@ -1,0 +1,91 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    background-color: black;
+    display: flex;
+    margin: auto;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    
+}
+
+.container h1{
+    color: white;
+    font-size: 3rem;
+}
+
+.todo{
+    height: 60vh;
+    min-width: 30%;
+    /* max-width: 30%; */
+    border-radius: 10%;
+    border: 1px solid wheat;
+}
+.container{
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+.inputs{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 1.5rem;
+    width: 100%;
+}
+
+.inputs input{
+    height: 2rem;
+    width: 15rem;
+    background: none;
+    border: none;
+    border-bottom: 1px solid white;
+    color: white;
+    margin: 0rem 1.5rem;
+}
+
+.inputs input:focus{
+border: none;
+outline: none;
+border-bottom: 1px solid white;
+}
+
+.inputs button{
+height: 2rem;
+width: 7rem;
+border-radius: 10px;
+}
+
+.li_child{
+    border: 1px solid white;
+    color: white;
+    margin: 1rem;
+    padding: 0.5rem;
+    list-style-type: none; 
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    color: white;
+}
+
+.icons span{
+    color: white;
+    margin: 0rem 0.5rem;
+    cursor: pointer;
+}
+
+@media (max-width: 768px) { 
+
+
+.todo{
+    width: 90%;
+}
+ }    
